@@ -38,6 +38,8 @@ var containsPattern = function(arr, m, k) {
     
     // return false;
     
+    // Sought out another persons code, to help me understand the problem
+    
     const delta = m * k   
   
     for (let i = 0; i + delta <= arr.length; i++) {
