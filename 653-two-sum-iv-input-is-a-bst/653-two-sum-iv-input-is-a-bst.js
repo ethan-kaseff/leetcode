@@ -16,18 +16,12 @@ var findTarget = function(root, k, hash={}) {
     
     hash[root.val] = root.val;
     
-    // if (hash[k-root.val]) return true;
-    
     if (root.left) findTarget(root.left, k, hash);
     if (root.right) findTarget(root.right, k, hash);
     
     for (let key in hash) {
         if (hash[k-key] && hash[k-key] != key) return true;
     }
-
-
-    
-
     return false;
     
     
