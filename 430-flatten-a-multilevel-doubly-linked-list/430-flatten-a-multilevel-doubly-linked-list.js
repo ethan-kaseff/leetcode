@@ -23,8 +23,6 @@ var flatten = function(head) {
 
     
     while(currentNode != null && (currentNode.next != null || currentChild != null)) {
-        console.log('enter')
-        console.log('currentNode', currentNode.val)
         // when current Child 
         if (currentNode.child != null) {
             
