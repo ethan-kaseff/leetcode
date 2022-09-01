@@ -39,7 +39,6 @@ var flatten = function(head) {
             
             // move through next row
             while(currentChild.next != null) {
-                console.log('currentChild', currentChild.val);
                 currentChild = currentChild.next;
             }
             
